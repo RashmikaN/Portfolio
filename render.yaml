@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: MYAPPNAME # the name of this service, eg hello-world
+    plan: free # make sure to set this to free or you'll get billed $$$
+    buildCommand: null # No build command needed for a static website
+    startCommand: null # No start command needed for a static website
+    envVars:
+      - key: RENDER_STATIC_SITE
+        value: true
